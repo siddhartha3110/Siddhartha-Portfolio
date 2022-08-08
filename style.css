@@ -19,7 +19,7 @@ html{
     background-color: black;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     padding: 30px 0;
     font-family: 'Ubuntu',sans-serif;
     transition: all 0.3s ease;
@@ -97,6 +97,7 @@ html{
      height: 100vh;
      color: white;
      min-height: 500px;
+     /* z-index: -1; */
      font-family: 'Ubuntu',sans-serif;
  }
 
@@ -271,6 +272,7 @@ html{
 /* All common styling codes */
 .section{
     padding: 100px 0;
+    /* z-index: -1; */
 }
 .about, .services, .skills, .teams,.education,.contact, footer{
     font-family: 'Poppins' sans-serif;
@@ -285,6 +287,8 @@ html{
     align-items: center;
     justify-content: space-between;
     font-family: 'Ubuntu', sans-serif;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
 }
 section .title{
     position: relative;
@@ -294,8 +298,10 @@ section .title{
     margin-bottom: 60px;
     margin-top: 20px;
     font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
 }
 section .title::before{
+    /* z-index: -1; */
     content: "";
     position: absolute;
     bottom: -23px;
@@ -321,6 +327,7 @@ section .title::after{
 
 .about .title::after{
     content: "Who i am";
+    /* z-index: -1; */
 }
 
 
@@ -349,6 +356,8 @@ section .title::after{
 
 .about .about-content .right p{
     text-align: justify;
+    font-weight: 400;
+
 }
 
 .about .about-content .right a{
@@ -372,14 +381,17 @@ section .title::after{
 
 /* Services section Styling */
 .services,.teams{
+    /* z-index: -1; */
     color: white;
     background: black;
     padding-bottom: 100px;
 }
 .services .title::before{
+    /* z-index: -1; */
     background: white;
 }
 .services .title::after{
+    /* z-index: -1; */
     background: black;
     content: "What i like";
 }
@@ -418,6 +430,7 @@ section .title::after{
 
 /* skills styling Design */
 .skills .title::after{
+    /* z-index: -1; */
     content: "What i know";
 }
 .skills .skills-content .column{
@@ -432,6 +445,7 @@ section .title::after{
     text-align: justify;
 }
 .skills .skills-content .right .bars{
+    /* z-index: -1; */
     margin-bottom: 15px;
 }
 .skills .skills-content .right .info{
@@ -444,6 +458,7 @@ section .title::after{
     font-size: 20px;
 }
 .skills .skills-content .right .line{
+    /* z-index: -1; */
     height: 10px;
     width: 100%;
     background: deepskyblue;
@@ -459,19 +474,22 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 80%;
+    width: 30%;
 }
 .skills-content .right .CSS::before{
-    width: 60%;
+    width: 30%;
 }
 .skills-content .right .Js::before{
-    width: 50%;
+    width: 40%;
 }
 .skills-content .right .DotNet::before{
     width: 70%;
 }
 .skills-content .right .SQL::before{
     width: 50%;
+}
+.skills-content .right .Angular::before{
+    width: 20%;
 }
 
 /* Teams Section Styling  */
@@ -667,6 +685,7 @@ section .title::after{
 
 /* footer section styling */
 footer{
+    justify-content: center;
     background: black;
     padding: 10px 10px;
     color: white;
