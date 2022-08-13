@@ -586,9 +586,6 @@ section .title::after{
 .contact .title::after{
     content: "get in touch";
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
@@ -622,7 +619,7 @@ section .title::after{
 }
 .contact .right form .fields{
     display: flex;
-
+    gap: 10px;
 }
 .contact .right form .field,
 .contact .right form .fields .field{
@@ -634,15 +631,7 @@ section .title::after{
     height: 80px;
     width: 100%;
 }
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email{
-    margin-left: 10px;
-}
-.contact .right form .email{
-    margin-right: 10px;
-}
+
 .contact .right form .field input,
 .contact .right form .textarea textarea{
     height: 100%;
