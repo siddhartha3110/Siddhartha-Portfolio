@@ -497,11 +497,7 @@ section .title::after{
     content: "";
     width: 100%;
 }
-.teams .title::after{
-    content: "Tools & Tech. I'm Familiar With";
-    background: black;
 
-}
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -513,6 +509,7 @@ section .title::after{
     font-size: 30px;
     font-weight: 500;
     margin: 5px 0 7px 0;
+    
 }
 .teams .carousel .card img{
     height: 100px;
@@ -674,6 +671,7 @@ section .title::after{
 
 /* footer section styling */
 footer{
+    text-align: center;
     justify-content: center;
     background: black;
     padding: 10px 10px;
@@ -686,4 +684,20 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+
+.card-img-top-height{
+    height: 200px;
+}
+
+.card-text-all{
+    font-weight: 400;
+    color: black;
+    text-align: justify;
+}
+
+.card-title-heading{
+    color: red;
+    font-weight: 800;
+    text-align: center;
 }
